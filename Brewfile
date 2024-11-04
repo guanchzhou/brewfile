@@ -3,7 +3,9 @@ cask_args appdir: "/Applications"
 # taping repos
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "buo/cask-upgrade"
 tap "homebrew/core"
+tap "homebrew/cask-fonts"
 
 # nice program to explore AWS EC2 Spot instances
 tap "alexei-led/spotinfo"
@@ -23,6 +25,8 @@ tap "romkatv/powerlevel10k"
 tap "sigstore/tap"
 # repo for tfswitch
 tap "warrensbox/tap"
+# repo for Hashicorp
+tap "hashicorp/tap"
 
 # installing these packages
 # C Foreign Function Interface for Python
@@ -107,8 +111,6 @@ brew "lima"
 # another local k8s cluster
 brew "minikube"
 
-# cli for Hashicorp packer
-brew "packer"
 # pipx is a tool to help you install and run Python applications in isolated environments.
 brew "pipx"
 # powerlevel10k is a theme for zsh
@@ -123,8 +125,6 @@ brew "skopeo"
 brew "sops"
 # security scanner for container images
 brew "syft"
-# cli for Hashicorp vault
-brew "vault"
 # editor for now
 brew "vim"
 # editor for future
@@ -145,6 +145,14 @@ brew "kreuzwerker/taps/m1-terraform-provider-helper"
 brew "pete911/tap/kubectl-image"
 # tfswitch is a tool for switching between different versions of Terraform
 brew "warrensbox/tap/tfswitch"
+
+# cli for Hashicorp vault
+brew "hashicorp/tap/vault"
+# cli for Hashicorp packer
+brew "hashicorp/tap/packer"
+
+# mas is a tool for managing macOS applications from the Mac App Store
+brew "mas"
 
 # alt-tab is a tool for switching between applications
 cask "alt-tab"
