@@ -2,10 +2,7 @@ cask_args appdir: "/Applications"
 
 # taping repos
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "buo/cask-upgrade"
-tap "homebrew/core"
-tap "homebrew/cask-fonts"
 
 # nice program to explore AWS EC2 Spot instances
 tap "alexei-led/spotinfo"
@@ -180,3 +177,5 @@ cask "rancher"
 cask "the-unarchiver"
 # zed is a modern editor
 cask "zed"
+# obsidian is a knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
