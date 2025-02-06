@@ -53,6 +53,8 @@ brew "cilium-cli"
 brew "hubble"
 # cli for cosign
 brew "cosign"
+# pinentry-mac is a tool for managing GPG keys
+brew "pinentry-mac"
 
 brew "direnv"
 # This tool provides a way to discover and explore the contents of a docker image.
