@@ -153,6 +153,11 @@ brew "hashicorp/tap/packer"
 # mas is a tool for managing macOS applications from the Mac App Store
 brew "mas"
 
+# neofetch is a command-line system information tool
+brew "neofetch"
+# zig is a general-purpose programming language and toolchain for building fast, optimally performing systems software.
+brew "zig"
+
 # alt-tab is a tool for switching between applications
 cask "alt-tab"
 # dbeaver is a universal database tool and SQL client
@@ -181,3 +186,7 @@ cask "the-unarchiver"
 cask "zed"
 # obsidian is a knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# rancher desktop is a desktop UI for kubernetes
+cask "rancher"
+# CLI from Mitchell Hashimoto
+cask "ghostty"
