@@ -18,12 +18,8 @@ tap "kreuzwerker/taps"
 tap "pete911/tap"
 # repo for powerlevel10k
 tap "romkatv/powerlevel10k"
-# repo for sigstore
-tap "sigstore/tap"
 # repo for tfswitch
 tap "warrensbox/tap"
-# repo for Hashicorp
-tap "hashicorp/tap"
 
 # installing these packages
 # C Foreign Function Interface for Python
