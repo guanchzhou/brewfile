@@ -4,7 +4,6 @@ cask_args appdir: "/Applications"
 # Taps (External Repositories)
 # =========================================================
 
-tap "homebrew/bundle"
 tap "homebrew/command-not-found"        # Suggests packages when commands not found
 tap "buo/cask-upgrade"                  # Upgrade manager for casks
 tap "alexei-led/spotinfo"               # AWS EC2 Spot instances explorer
@@ -20,8 +19,6 @@ tap "txn2/tap"                          # Various tools
 tap "vmware-tanzu/pinniped"             # Authentication system for Kubernetes
 tap "warrensbox/tap"                    # tfswitch
 tap "hashicorp/tap"                     # Hashicorp tools
-tap "danielfoehrkn/switch"              # kubectx/kubens replacement
-tap "norwoodj/tap"                      # Helm documentation generator
 
 # =========================================================
 # Shell & Terminal Enhancements
@@ -37,9 +34,6 @@ brew "yazi"                             # Terminal file manager
 brew "zoxide"                           # Smarter cd command
 brew "direnv"                           # Environment switcher
 brew "gnu-sed"                          # GNU version of sed
-brew "bash"                             # GNU Bash
-brew "nushell"                          # Modern shell
-brew "gnupg"                            # GNU Privacy Guard
 
 # Shell customization
 brew "powerlevel10k"                    # ZSH theme
@@ -52,8 +46,6 @@ brew "kube-ps1"                         # Kubernetes prompt info
 # Version Control
 brew "git"                              # Git
 brew "gitsign"                          # Git commit signing
-brew "git-lfs"                          # Git Large File Storage
-brew "pre-commit"                       # Git hooks framework
 
 # Programming Languages
 brew "go"                               # Golang
@@ -61,13 +53,6 @@ brew "zig"                              # Zig language
 brew "cffi"                             # C Foreign Function Interface for Python
 brew "pyenv"                            # Python version manager
 brew "pipx"                             # Python application installer
-brew "node"                             # Node.js
-brew "pnpm"                             # Fast, disk space efficient package manager
-brew "poetry"                           # Python dependency management
-brew "rust"                             # Rust programming language
-brew "rustup"                           # Rust toolchain installer
-brew "maven"                            # Java project management
-brew "pkgconf"                          # Package compiler and linker metadata toolkit
 
 # Editors
 brew "vim"                              # Text editor
@@ -82,14 +67,6 @@ brew "warrensbox/tap/tfswitch"          # Terraform version manager
 brew "kreuzwerker/taps/m1-terraform-provider-helper" # Terraform provider helper for Apple Silicon
 brew "hashicorp/tap/packer"             # Machine image builder
 brew "hashicorp/tap/vault"              # Secrets management
-brew "terraform-docs"                    # Terraform documentation generator
-brew "terrascan"                        # Terraform security scanner
-brew "tflint"                           # Terraform linter
-brew "tfsec"                            # Terraform security scanner
-brew "tfupdate"                         # Terraform version updater
-brew "infracost"                        # Cloud cost estimation
-brew "checkov"                          # Infrastructure as Code scanner
-brew "jsonnet"                          # Data templating language
 
 # Configuration Management
 brew "ansible"                          # Infrastructure automation
@@ -117,7 +94,6 @@ brew "k9s"                              # Kubernetes TUI
 brew "argocd"                           # ArgoCD CLI
 brew "helm"                             # Kubernetes package manager
 brew "kubeconform"                      # Kubernetes manifest validator
-brew "norwoodj/tap/helm-docs"           # Helm documentation generator
 
 # Container Tools
 brew "dive"                             # Docker image explorer
@@ -137,7 +113,6 @@ brew "qemu"                             # Machine emulator
 # Specialized Kubernetes Tools
 brew "cilium-cli"                       # Cilium CLI
 brew "hubble"                           # Cilium Hubble
-brew "robusta-dev/krr/krr"              # Kubernetes resource reader
 
 # =========================================================
 # Data Processing & Utilities
@@ -148,7 +123,6 @@ brew "yq"                               # YAML processor
 brew "cheat"                            # Cheatsheet manager
 brew "pinentry-mac"                     # GPG PIN entry
 brew "mas"                              # Mac App Store CLI
-brew "redis"                            # In-memory data store
 
 # =========================================================
 # Desktop Applications (Casks)
@@ -166,24 +140,10 @@ cask "rancher"                          # Kubernetes desktop UI
 cask "virtualbox"                       # Virtualization software
 
 # Productivity & Utilities
-cask "alt-tab"                          # Window switcher
 cask "hiddenbar"                        # Menu bar manager
 cask "raycast"                          # Launcher & productivity tool
 cask "the-unarchiver"                   # Archive utility
 cask "obsidian"                         # Knowledge base
-cask "marta"                            # File manager
-
-# Audio Tools
-cask "airfoil"                          # Audio routing
-cask "audio-hijack"                     # Audio recording
-cask "farrago"                          # Soundboard
-cask "loopback"                         # Audio routing
-cask "piezo"                            # Audio recording
-cask "soundsource"                      # Audio control
-
-# VPN & Security
-cask "aviatrix-vpn-client"              # VPN client
-cask "twingate"                         # Zero trust access
 
 # Fonts
 cask "font-fira-code"                   # Programming font with ligatures
