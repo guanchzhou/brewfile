@@ -14,7 +14,7 @@ tap "jandedobbeleer/oh-my-posh"         # Cross-platform/shell prompt renderer
 tap "kreuzwerker/taps"                  # Terraform version manager and helpers
 tap "pete911/tap"                       # kubectl-image plugin
 tap "robusta-dev/krr"                   # Kubernetes resource reader
-tap "romkatv/powerlevel10k"             # Powerlevel10k ZSH theme
+tap "danielfoehrkn/switch"              # kubeswitch (kubectx/kubens replacement)
 tap "txn2/tap"                          # Various tools
 tap "vmware-tanzu/pinniped"             # Authentication system for Kubernetes
 tap "warrensbox/tap"                    # tfswitch
