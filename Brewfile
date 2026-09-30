@@ -1,149 +1,216 @@
-cask_args appdir: "/Applications"
-
-# =========================================================
-# Taps (External Repositories)
-# =========================================================
-
-tap "homebrew/command-not-found"        # Suggests packages when commands not found
-tap "buo/cask-upgrade"                  # Upgrade manager for casks
-tap "alexei-led/spotinfo"               # AWS EC2 Spot instances explorer
-tap "azure/kubelogin"                   # Azure Kubernetes login
-tap "databricks/tap"                    # Databricks tools
-tap "devops-kung-fu/tap"                # DevOps Kung Fu Mafia repo
-tap "jandedobbeleer/oh-my-posh"         # Cross-platform/shell prompt renderer
-tap "kreuzwerker/taps"                  # Terraform version manager and helpers
-tap "pete911/tap"                       # kubectl-image plugin
-tap "robusta-dev/krr"                   # Kubernetes resource reader
-tap "danielfoehrkn/switch"              # kubeswitch (kubectx/kubens replacement)
-tap "txn2/tap"                          # Various tools
-tap "vmware-tanzu/pinniped"             # Authentication system for Kubernetes
-tap "warrensbox/tap"                    # tfswitch
-tap "hashicorp/tap"                     # Hashicorp tools
-
-# =========================================================
-# Shell & Terminal Enhancements
-# =========================================================
-
-# Modern shell utilities
-brew "bat"                              # Better cat
-brew "btop"                             # Better top
-brew "eza"                              # Better ls
-brew "fzf"                              # Fuzzy finder
-brew "ripgrep"                          # Fast grep
-brew "yazi"                             # Terminal file manager
-brew "zoxide"                           # Smarter cd command
-brew "direnv"                           # Environment switcher
-brew "gnu-sed"                          # GNU version of sed
-
-# Shell customization
-brew "powerlevel10k"                    # ZSH theme
-brew "kube-ps1"                         # Kubernetes prompt info
-
-# =========================================================
-# Development Tools
-# =========================================================
-
-# Version Control
-brew "git"                              # Git
-brew "gitsign"                          # Git commit signing
-
-# Programming Languages
-brew "go"                               # Golang
-brew "zig"                              # Zig language
-brew "cffi"                             # C Foreign Function Interface for Python
-brew "pyenv"                            # Python version manager
-brew "pipx"                             # Python application installer
-
-# Editors
-brew "vim"                              # Text editor
-brew "neovim"                           # Modern vim
-
-# =========================================================
-# DevOps & Cloud Tools
-# =========================================================
-
-# Infrastructure as Code
-brew "warrensbox/tap/tfswitch"          # Terraform version manager
-brew "kreuzwerker/taps/m1-terraform-provider-helper" # Terraform provider helper for Apple Silicon
-brew "hashicorp/tap/packer"             # Machine image builder
-brew "hashicorp/tap/vault"              # Secrets management
-
-# Configuration Management
-brew "ansible"                          # Infrastructure automation
-brew "ansible-lint"                     # Ansible linter
-brew "sops"                             # Secrets encryption
-
-# Cloud Providers
-brew "awscli"                           # AWS CLI
-brew "aws-iam-authenticator"            # AWS auth
-brew "saml2aws"                         # AWS SAML auth
-brew "azure-cli"                        # Azure CLI
-brew "azure/kubelogin/kubelogin"        # Azure Kubernetes login
-brew "alexei-led/spotinfo/spotinfo"     # AWS EC2 Spot instances explorer
-
-# =========================================================
-# Kubernetes & Container Tools
-# =========================================================
-
-# Kubernetes CLI & Tools
-brew "kubernetes-cli"                   # kubectl
-brew "kubecolor"                        # Colorize kubectl output
-brew "danielfoehrkn/switch/switch"      # kubectx/kubens replacement
-brew "pete911/tap/kubectl-image"        # kubectl image plugin
-brew "k9s"                              # Kubernetes TUI
-brew "argocd"                           # ArgoCD CLI
-brew "helm"                             # Kubernetes package manager
-brew "kubeconform"                      # Kubernetes manifest validator
-
-# Container Tools
-brew "dive"                             # Docker image explorer
-brew "skopeo"                           # Container image tool
-brew "ko"                               # Go container builder
-brew "cosign"                           # Container signing
-brew "syft"                             # SBOM generator
-brew "devops-kung-fu/tap/bomber"        # SBOM security scanner
-
-# Local Kubernetes
-brew "kind"                             # Kubernetes in Docker
-brew "k3d"                              # k3s in Docker
-brew "minikube"                         # Local Kubernetes
-brew "lima"                             # Linux VMs on macOS
-brew "qemu"                             # Machine emulator
-
-# Specialized Kubernetes Tools
-brew "cilium-cli"                       # Cilium CLI
-brew "hubble"                           # Cilium Hubble
-
-# =========================================================
-# Data Processing & Utilities
-# =========================================================
-
-brew "jq"                               # JSON processor
-brew "yq"                               # YAML processor
-brew "cheat"                            # Cheatsheet manager
-brew "pinentry-mac"                     # GPG PIN entry
-brew "mas"                              # Mac App Store CLI
-
-# =========================================================
-# Desktop Applications (Casks)
-# =========================================================
-
-# Development Tools
-cask "dbeaver-community"                # Database tool
-cask "zed"                              # Modern editor
-cask "warp"                             # Modern terminal
-cask "ghostty"                          # Terminal from Mitchell Hashimoto
-cask "temurin"                          # OpenJDK distribution
-cask "google-cloud-sdk"                 # Google Cloud tools
-cask "session-manager-plugin"           # AWS Session Manager
-cask "rancher"                          # Kubernetes desktop UI
-cask "virtualbox"                       # Virtualization software
-
-# Productivity & Utilities
-cask "hiddenbar"                        # Menu bar manager
-cask "raycast"                          # Launcher & productivity tool
-cask "the-unarchiver"                   # Archive utility
-cask "obsidian"                         # Knowledge base
-
-# Fonts
-cask "font-fira-code"                   # Programming font with ligatures
+tap "bshk-app/tap"
+tap "buo/cask-upgrade"
+tap "danielfoehrkn/switch"
+tap "databricks/tap"
+tap "guanchzhou/tap"
+tap "hashicorp/tap"
+tap "kreuzwerker/taps"
+tap "manaflow-ai/cmux"
+tap "nklmilojevic/sofka"
+tap "norwoodj/tap"
+tap "pete911/tap"
+tap "romkatv/powerlevel10k"
+tap "txn2/tap"
+tap "warrensbox/tap"
+brew "cffi"
+brew "openssl@3"
+brew "libyaml"
+brew "ansible"
+brew "ansible-lint"
+brew "argocd"
+brew "aria2"
+brew "autoconf"
+brew "autoconf-archive"
+brew "automake"
+brew "aws-iam-authenticator"
+brew "awscli"
+brew "azure-cli"
+brew "bash"
+brew "bat"
+brew "btop"
+brew "ccache"
+brew "cheat"
+brew "checkov"
+brew "cilium-cli"
+brew "cmake"
+brew "container"
+brew "coreutils"
+brew "cosign"
+brew "crane"
+brew "direnv"
+brew "dive"
+brew "djvulibre"
+brew "docker-credential-helper"
+brew "docker-credential-helper-ecr"
+brew "e2fsprogs"
+brew "espeak-ng"
+brew "eza"
+brew "fast_float"
+brew "ffmpeg"
+brew "fzf"
+brew "gcx"
+brew "gh"
+brew "git"
+brew "git-lfs"
+brew "gitleaks"
+brew "gitsign"
+brew "glab"
+brew "gnu-sed"
+brew "gnupg"
+brew "go"
+brew "librsvg"
+brew "graphviz"
+brew "grpcurl"
+brew "helm"
+brew "hubble"
+brew "jq"
+brew "jsonnet"
+brew "k3d"
+brew "k6"
+brew "k9s"
+brew "kind"
+brew "ko"
+brew "kubernetes-cli"
+brew "kube-ps1"
+brew "kubecolor"
+brew "kubeconform"
+brew "kubelogin"
+brew "kubent"
+brew "kustomize"
+brew "kyverno"
+brew "lftp"
+brew "libtommath"
+brew "lima"
+brew "llvm"
+brew "mas"
+brew "maven"
+brew "simdutf"
+brew "minikube"
+brew "nasm"
+brew "neovim"
+brew "ninja"
+brew "node"
+brew "nushell"
+brew "openjdk@17"
+brew "pam-reattach"
+brew "pgvector"
+brew "pinentry-mac"
+brew "pint"
+brew "pipx"
+brew "pkgconf"
+brew "pnpm"
+brew "poetry"
+brew "poppler"
+brew "postgresql@16"
+brew "postgresql@18", link: true
+brew "potrace"
+brew "powerlevel10k"
+brew "pre-commit"
+brew "pyenv"
+brew "qemu"
+brew "qt"
+brew "redis"
+brew "ripgrep"
+brew "rtk"
+brew "rust"
+brew "rustup"
+brew "skopeo"
+brew "smartmontools"
+brew "swiftformat"
+brew "swiftlint"
+brew "syft"
+brew "terraform-docs"
+brew "tesseract"
+brew "tesseract-lang"
+brew "testkube"
+brew "tfsec"
+brew "tfupdate"
+brew "twine"
+brew "typst"
+brew "unar"
+brew "uv"
+brew "vhs"
+brew "vim"
+brew "wget"
+brew "xcodegen"
+brew "yamllint"
+brew "yazi"
+brew "yq"
+brew "yt-dlp"
+brew "zig"
+brew "zoxide"
+brew "danielfoehrkn/switch/switch"
+brew "databricks/tap/databricks"
+brew "hashicorp/tap/vault"
+brew "kreuzwerker/taps/m1-terraform-provider-helper"
+brew "nklmilojevic/sofka/sofka", trusted: true
+brew "norwoodj/tap/helm-docs"
+brew "pete911/tap/kubectl-image"
+cask "1password"
+cask "airfoil"
+cask "android-commandlinetools"
+cask "android-studio"
+cask "audio-hijack"
+cask "bambu-studio"
+cask "cmux"
+cask "container"
+cask "bshk-app/tap/containerstack", trusted: true
+cask "fantastical"
+cask "farrago"
+cask "finetune"
+cask "firefox"
+cask "font-fira-code"
+cask "gcloud-cli"
+cask "ghostty"
+cask "hiddenbar"
+cask "ilya-birman-typography-layout"
+cask "keka"
+cask "loopback"
+cask "marta"
+cask "microsoft-teams"
+cask "notion"
+cask "obsidian", args: { appdir: "/Applications" }
+cask "ollama-app"
+cask "openlogi"
+cask "piezo"
+cask "raycast"
+cask "session-manager-plugin"
+cask "signal"
+cask "slack"
+cask "slack-cli"
+cask "soundsource"
+cask "telegram"
+cask "temurin"
+cask "temurin@21"
+cask "warrensbox/tap/tfswitch", trusted: true
+cask "guanchzhou/tap/threemf"
+cask "virtualbox"
+cask "zed"
+cask "zoom"
+mas "1Blocker", id: 1365531024
+mas "Blackmagic Disk Speed Test", id: 425264550
+mas "Brother iPrint&Scan", id: 1193539993
+mas "DaVinci Resolve", id: 571213070
+mas "HP Smart", id: 1474276998
+mas "Okta Extension App", id: 1439967473
+mas "Okta Verify", id: 490179405
+mas "Twingate", id: 1501592214
+go "github.com/spf13/cobra/cobra"
+go "github.com/go-delve/delve/cmd/dlv"
+go "github.com/ramya-rao-a/go-outline"
+go "github.com/fatih/gomodifytags"
+go "github.com/uudashr/gopkgs/v2/cmd/gopkgs"
+go "github.com/haya14busa/goplay/cmd/goplay"
+go "golang.org/x/tools/gopls"
+go "github.com/cweill/gotests/gotests"
+go "golang.org/x/vuln/cmd/govulncheck"
+go "github.com/josharian/impl"
+go "github.com/yannh/kubeconform/cmd/kubeconform"
+go "honnef.co/go/tools/cmd/staticcheck"
+cargo "cedar-policy-cli"
+krew "ctx"
+krew "get-all"
+krew "krew"
+krew "ns"
+npm "@googleworkspace/cli"
+npm "puppeteer"
