@@ -2,7 +2,7 @@ tap "bshk-app/tap"
 tap "buo/cask-upgrade"
 tap "danielfoehrkn/switch"
 tap "databricks/tap"
-tap "guanchzhou/tap"
+tap "guanchzhou/tap", trusted: true
 tap "hashicorp/tap"
 tap "kreuzwerker/taps"
 tap "manaflow-ai/cmux"
@@ -197,9 +197,7 @@ mas "Okta Verify", id: 490179405
 mas "Twingate", id: 1501592214
 go "github.com/spf13/cobra/cobra"
 go "github.com/go-delve/delve/cmd/dlv"
-go "github.com/ramya-rao-a/go-outline"
 go "github.com/fatih/gomodifytags"
-go "github.com/uudashr/gopkgs/v2/cmd/gopkgs"
 go "github.com/haya14busa/goplay/cmd/goplay"
 go "golang.org/x/tools/gopls"
 go "github.com/cweill/gotests/gotests"
